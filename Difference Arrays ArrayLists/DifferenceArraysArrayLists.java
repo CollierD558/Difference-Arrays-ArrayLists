@@ -1,4 +1,4 @@
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.ArrayList;
 
 /*
@@ -68,44 +68,80 @@ public class DifferenceArraysArrayLists
             arrayList2.add(i + 5);
         }
 
-        System.out.println("Printing the size of the arrays and arraylists");
+        System.out.println("Printing the contents of the arrays\n");
+
+        // Arrays
+        System.out.println("Array 1");
+        for(int values1 : array1)
+        {
+            System.out.print(values1 + ", ");
+        }
+
+        System.out.println("\n\nArray 2");
+        for(int values2 : array2)
+        {
+            System.out.print(values2 + ", ");
+        }
+
+        System.out.println("\n\nArray 3");
+        for(int values3 : array3)
+        {
+            System.out.print(values3 + ", ");
+        }
+
+        System.out.println("\n\nPrinting the values of the array lists");
+
+        // Array lists
+        System.out.println("\nArray list 1");
+        for(int values4 : arrayList1)
+        {
+            System.out.print(values4 + ", ");
+        }
+
+        System.out.println("\n\nArray list2");
+        for(int values5 : arrayList2)
+        {
+            System.out.print(values5 + ", ");
+        }
+
+        System.out.println("\nPrinting the size of the arrays and arraylists");
 
         // Use .length tp get the size of an array
-        System.out.println("\nArrays use .length to get it's size");
-        System.out.println("The size of array 1 is: " + array1.length);
-        System.out.println("The size of array 2 is: " + array2.length);
-        System.out.println("The size of array 3 is: " + array3.length);
+        System.out.println("\n Arrays use .length to get it's size");
+        System.out.println("  The size of array 1 is: " + array1.length);
+        System.out.println("  The size of array 2 is: " + array2.length);
+        System.out.println("  The size of array 3 is: " + array3.length);
 
         // Use size method to get the size of an array list
-        System.out.println("\nArray lists use size() to get its size");
-        System.out.println("The size of array list 1 is: " + arrayList1.size());
-        System.out.println("The size of array list 2 is : " + arrayList2.size());
+        System.out.println("\n Array lists use size() to get its size");
+        System.out.println("  The size of array list 1 is: " + arrayList1.size());
+        System.out.println("  The size of array list 2 is : " + arrayList2.size());
 
         System.out.println("\nPrinting the third element of the arrays and array lists");
 
         // Pring the third element of each array using [] operators
-        System.out.println("\nArrays use the [] operator to access a specific element");
-        System.out.println("The third element of array 1 is: " + array1[2]);
-        System.out.println("The third element of array 2 is: " + array2[2]);
-        System.out.println("The third element of array 3 is: " + array3[2]);
+        System.out.println("\n Arrays use the [] operator to access a specific element");
+        System.out.println("  The value of the third element of array 1 is: " + array1[2]);
+        System.out.println("  The value of the third element of array 2 is: " + array2[2]);
+        System.out.println("  The value of the third element of array 3 is: " + array3[2]);
 
         // Print the third element of the array list useing the get method
-        System.out.println("\nArray lists use get() to access a specific element");
-        System.out.println("The third element of array list 1 is: " + arrayList1.get(2));
-        System.out.println("The third element of array list 2 is: " + arrayList2.get(2));
+        System.out.println("\n Array lists use get() to access a specific element");
+        System.out.println("  The value of the third element of array list 1 is: " + arrayList1.get(2));
+        System.out.println("  The value of the third element of array list 2 is: " + arrayList2.get(2));
 
         System.out.println("\nPrinting the number of filled elements in the arrays and array lists");
 
         // To get the number of filled elements in an array use a companion variable
-        System.out.println("\nArrays use a companion variable to count filled elements");
-        System.out.println("Array 1 has " + array1CurrentSize + " out of " + array1.length + " elements filled");
-        System.out.println("Array 2 has " + array2CurrentSize + " out of " + array2.length + " elements filled");
-        System.out.println("Array 3 has " + array3CurrentSize + " out of " + array3.length + " elements filled");
+        System.out.println("\n Arrays use a companion variable to count filled elements");
+        System.out.println("  Array 1 has " + array1CurrentSize + " out of " + array1.length + " elements filled");
+        System.out.println("  Array 2 has " + array2CurrentSize + " out of " + array2.length + " elements filled");
+        System.out.println("  Array 3 has " + array3CurrentSize + " out of " + array3.length + " elements filled");
 
         // To get the number of filled elements in an array list use size method beacuse the number of filled elements is the same as the size
-        System.out.println("\nArray lists use size() to get the number of filled variables");
-        System.out.println("Array list 1 has " + arrayList1.size() + " elements filled which is the same as its size");
-        System.out.println("Array list 2 has " + arrayList2.size() + " elements filled which is the same as its size");
+        System.out.println("\n Array lists use size() to get the number of filled variables");
+        System.out.println("  Array list 1 has " + arrayList1.size() + " elements filled which is the same as its size");
+        System.out.println("  Array list 2 has " + arrayList2.size() + " elements filled which is the same as its size");
         
     }
 }
